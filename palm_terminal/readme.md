@@ -1,12 +1,12 @@
 # palm_terminal
 
-![palm_terminal](imgur.com image replace me!)
+![palm_terminal](https://avatars.githubusercontent.com/u/34816113?v=4)
 
-*A short description of the keyboard/project*
+A keyboard/controller hybrid designed to be used with modular addons such as displays and small computers like the Raspberry Pi.
 
-* Keyboard Maintainer: [Aaron](https://github.com/Seph821)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [Seph821](https://github.com/Seph821)
+* Hardware Supported: TBD
+* Hardware Availability: TBD
 
 Make example for this keyboard (after setting up your build environment):
 
