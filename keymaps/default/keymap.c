@@ -100,13 +100,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KEY_PS_L1, KEY_PS_L2, PS_UP, PS_DN, PS_LF, PS_RT, KEY_PS_SHARE, KEY_PS_OPTIONS, KEY_PS_O, KEY_PS_SQUARE, KEY_PS_X, KEY_PS_TRIANGLE, KEY_PS_R2, KEY_PS_R1
     ),
     [1] = LAYOUT_60_ansi(
-        KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,     KC_F7,      KC_F8,   KC_F9,     KC_F10,  KC_F11,     KC_F12,  KC_BSPC,
-        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,      KC_U,       KC_I,    KC_O,      KC_P,    KC_LBRC,    KC_RBRC, KC_BSLS,
-        KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,      KC_J,       KC_K,    KC_L,      KC_SCLN, KC_QUOT,             KC_ENT,
-        KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,      KC_N,       KC_M,    KC_COMM,   KC_DOT,  KC_SLSH,             KC_RSFT,
-        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC,                    KC_NO,                 KC_RALT, KC_TRNS,            KC_APP,              KC_RCTL,
+        KC_ESC,  KC_F1,   KC_F2,   KC_F3,    KC_F4,   KC_F5,   KC_F6,     KC_F7,      KC_F8,   KC_F9,     KC_F10,     KC_F11,     KC_F12,  KC_BSPC,
+        KC_TAB,  KC_Q,    KC_UP,   KC_E,     KC_R,    KC_T,    KC_Y,      KC_U,       KC_I,    KC_O,      KC_PSCR,    KC_SCRL,    KC_PAUS, KC_BSLS,
+        KC_CAPS, KC_LEFT, KC_DOWN, KC_RIGHT, KC_F,    KC_G,    KC_H,      KC_J,       KC_K,    KC_INS,    KC_HOME,    KC_PGUP,             KC_ENT,
+        KC_LSFT,          KC_Z,    KC_X,     KC_C,    KC_V,    KC_B,      KC_N,       KC_M,    KC_DEL,    KC_END,     KC_PGDN,             KC_RSFT,
+        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC,                    KC_NO,                 KC_RALT, KC_TRNS,               KC_APP,              KC_RCTL,
         
-        KEY_PS_L1, KEY_PS_L2, PS_UP, PS_DN, PS_LF, PS_RT, KEY_PS_SHARE, KEY_PS_OPTIONS, KEY_PS_O, KEY_PS_SQUARE, KEY_PS_X, KEY_PS_TRIANGLE, KEY_PS_R2, KEY_PS_R1
+        KEY_PS_L1, KEY_PS_L2, PS_UP, PS_DN,  PS_LF, PS_RT, KEY_PS_SHARE, KEY_PS_OPTIONS, KEY_PS_O, KEY_PS_SQUARE, KEY_PS_X, KEY_PS_TRIANGLE, KEY_PS_R2, KEY_PS_R1
     )
 };
 
