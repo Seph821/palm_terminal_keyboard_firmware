@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include QMK_KEYBOARD_H
 #include "config.h"
+#include "analog.h"
 
 // Define proper, unique custom keycodes for all joystick functions
 enum custom_keycodes {
@@ -117,3 +118,19 @@ joystick_config_t joystick_axes[JOYSTICK_AXIS_COUNT] = {
     JOYSTICK_AXIS_IN(F2, 900, 575, 285),
     JOYSTICK_AXIS_IN(F3, 900, 575, 285),
 };
+
+report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
+    // Only move the mouse if Layer 2 is currently active
+    if (IS_LAYER_ON(1)) {
+        // Read joystick values (0-1023)
+        uint16_t x_val = adc_read(F0);
+        uint16_t y_val = adc_read(F1);
+        
+        // Convert to relative movements and apply deadzones/scaling
+        mouse_report.x = (x_val - 512) / 4; 
+        mouse_report.y = (y_val - 512) / 4; 
+    }
+    
+    // Returns empty/zeroed mouse reports if Layer 2 is inactive
+    return mouse_report;
+}
